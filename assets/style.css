@@ -1,0 +1,14 @@
+:root {
+    --bg: rgb(162, 224, 231);
+    --txtcolor: rgb(30, 57, 110);
+}
+
+#header {
+    background-color: var(--bg);
+    color: var(--txtcolor);
+}
+
+#header ul {
+    align-items: flex-end;
+    list-style-type: none;
+}
