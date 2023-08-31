@@ -1,14 +1,114 @@
+/*------Core------*/
 :root {
-    --bg: rgb(162, 224, 231);
-    --txtcolor: rgb(30, 57, 110);
+    --liblue: #b0cee7;
+    --rudblue: #447bab;
+    --peach: #e89569;
+    --flax: #FFEE93;
+    --lemon: #FCF5C7;
+    --celadon: #ADF7B6;
+    --purble: #763f8a;
+    --pad: 0.9%;
 }
 
-#header {
-    background-color: var(--bg);
-    color: var(--txtcolor);
+* {
+    margin: 0%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-#header ul {
-    align-items: flex-end;
-    list-style-type: none;
+h2 {
+    text-decoration: underline;
+    padding: var(--pad);
+    color: var(--purble)
+}
+
+/*------Start------*/
+.Header {
+    background-color: var(--lemon);
+    color: var(--peach);
+    padding: var(--pad);
+}
+
+.Header img {
+    border-radius: 50%;
+    border-style: solid;
+}
+
+.NavBar {
+    display: flex;
+    justify-content: flex-end;
+    right: 10%;
+    top: 25%
+}
+
+.NavBar a {
+   padding: 0.5%;
+   color: var(--peach);
+   font-weight: bold;
+   display: inline;
+   position: relative;
+   bottom: 10px;
+}
+
+/*------Main------*/
+.Main {
+    text-align: center;
+    background-color: var(--celadon);
+    padding: var(--pad);
+}
+
+.Main p {
+    color: var(--rudblue);
+    font-weight: bold;
+}
+
+.Main img {
+    border-radius: 30px;
+    box-shadow: var(--liblue) 3px 3px 3px 3px;
+    margin: 4px;
+}
+
+.Mod1 img:hover {
+    box-shadow: var(--peach) 3px 3px 3px 3px;
+    transition: 0.7s;
+}
+
+#About {
+    background-color: var(--liblue);
+    padding: 10px;
+    border-style: solid;
+    border-color: var(--rudblue);
+    border-radius: 2px;
+}
+a:hover {
+    color: crimson;
+    transition: 0.7s;
+}
+
+/*------End------*/
+.End {
+    text-align: center;
+    background-color: var(--liblue);
+    color: var(--purble);
+    padding: var(--pad);
+    line-height: 1.3;
+    font-weight: bold;
+}
+
+.End a{
+    text-decoration: none;
+    color: var(--rudblue)
+}
+
+a:hover {
+    color: crimson;
+    transition: 0.7s;
+}
+
+.End h2 {
+    color: var(--rudblue);
+}
+
+#cont {
+    display: flex;
+    justify-content: space-evenly;
 }
